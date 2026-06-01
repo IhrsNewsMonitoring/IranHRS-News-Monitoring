@@ -1,0 +1,6 @@
+telethon
+requests
+beautifulsoup4
+streamlit
+pandas
+PyYAML

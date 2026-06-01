@@ -1,0 +1,26 @@
+# Example configuration for IranHRS-News-Monitoring
+
+telegram:
+  # Telegram API credentials.  Create these at https://my.telegram.org.
+  api_id: YOUR_API_ID
+  api_hash: "YOUR_API_HASH"
+  # Session name for Telethon; Telethon will store a .session file in the working directory.
+  session_name: "news_monitor"
+  # List of channel usernames or links to monitor (without the @ symbol).
+  channels:
+    - example_channel
+    - another_channel
+
+news:
+  # List of websites to monitor.  Each site may include CSS selectors for title and content.
+  websites:
+    - url: "https://example.com/news"
+      title_selector: "h1"
+      content_selector: "div.article-content"
+    - url: "https://another-site.org/articles"
+      title_selector: "h1.article-title"
+      content_selector: "div#content"
+
+database:
+  # Path to the SQLite database file.  The file will be created if it does not exist.
+  path: "data/news.db"
