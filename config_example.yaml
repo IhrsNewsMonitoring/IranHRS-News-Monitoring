@@ -1,26 +1,55 @@
-# Example configuration for IranHRS-News-Monitoring
-
 telegram:
-  # Telegram API credentials.  Create these at https://my.telegram.org.
   api_id: YOUR_API_ID
   api_hash: "YOUR_API_HASH"
-  # Session name for Telethon; Telethon will store a .session file in the working directory.
-  session_name: "news_monitor"
-  # List of channel usernames or links to monitor (without the @ symbol).
-  channels:
-    - example_channel
-    - another_channel
+  session_name: "iranhrs_monitor"
 
-news:
-  # List of websites to monitor.  Each site may include CSS selectors for title and content.
-  websites:
-    - url: "https://example.com/news"
-      title_selector: "h1"
-      content_selector: "div.article-content"
-    - url: "https://another-site.org/articles"
-      title_selector: "h1.article-title"
-      content_selector: "div#content"
+  channels:
+    - irna_1313
+    - ilnair
+    - Tasnimnews
+    - farsna
+    - mizanplus
+    - Rokna_news
+    - mehrnews
+
+rss:
+  feeds:
+    - https://www.tasnimnews.ir/fa/rss/feed/0/0/8/1/TopStories
+    - https://www.tabnak.ir/fa/rss/1
+    - https://www.isna.ir/rss
+    - https://mizanonline.ir/fa/rss/allnews
+
+websites:
+  - https://www.tasnimnews.ir/
+  - https://entekhab.ir/fa/
+  - https://mizanonline.ir/fa/
+  - https://www.tabnak.ir/
+  - https://www.irna.ir/
+  - https://www.ilna.ir/
+  - https://www.isna.ir/
+
+keywords:
+  - اعدام
+  - خطر اعدام
+  - اجرای حکم
+  - حکم اعدام
+  - انتقال به انفرادی
+  - سلول انفرادی
+  - زندان
+  - زندانی
+  - زندانی سیاسی
+  - بازداشت
+  - بازداشتی
+  - قزلحصار
+  - اوین
+  - فشافویه
+  - رجایی شهر
+  - زندان مرکزی
+  - محاربه
+  - بغی
+  - دادگاه انقلاب
+  - دیوان عالی
+  - اعتراضات
 
 database:
-  # Path to the SQLite database file.  The file will be created if it does not exist.
   path: "data/news.db"
