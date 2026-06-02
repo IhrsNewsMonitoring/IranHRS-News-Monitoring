@@ -1,6 +1,6 @@
 telegram:
-  api_id: YOUR_API_ID
-  api_hash: "YOUR_API_HASH"
+  api_id: 26330968
+  api_hash: gAAAAABpU7LIzjF794Q3rd2riBZdY02LzKPLSzmU1BGs3h6iQYn61Q3EID9ANyIq9cKEik52XcvLOHhbroCe4hzmwKQSLabt0Zzf5HKEFW4_0wxpRyWWVIOhl0ksKKmxdBCn0EDHrmTU
   session_name: "iranhrs_monitor"
 
   channels:
